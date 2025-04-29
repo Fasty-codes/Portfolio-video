@@ -54,6 +54,13 @@
             color: blue;
         }
 
+        .icon{
+            display: none;
+            font-size:30px;
+            color: #fff;
+            text-decoration: none;
+        }
+
         .navbar a{
             display: inline-block;
             font-size: 25px;
@@ -75,10 +82,11 @@
             position: relative;
             justify-content: center;
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             background: url(images/bg-dark.jpg) no-repeat;
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             display: flex;
             align-items: center;
             padding: 70px 10% 0;
@@ -248,6 +256,9 @@
             background: #1d2951 ;
             padding-bottom: 1em;
             border-bottom: 2px solid #000;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
         .about-img img{
@@ -534,6 +545,22 @@
             transition: 0.3s;
             margin-right: 50px;
         }
+
+        .cards #card1{
+            background: url(images/ocean.jpeg);
+            background-size: cover;
+        }
+
+        .cards #card2{
+            background: url(images/solar-system.webp);
+            background-size: cover;
+        }
+
+        .cards #card3{
+            background: url(images/education.webp);
+            background-size: cover;
+        }
+
         .card:hover{
             transform: scale(1.05);
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.2),  0 0 40px rgba(255, 255, 255, 0.2), 0 0 60px rgba(255, 255, 255, 0.2),  0 0 80px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.2);
@@ -665,7 +692,7 @@
             text-decoration: none;
             font-weight: 600;
             opacity: 0;
-            background: ;
+            background: blue;
             animation: slideTop 1s ease forwards;
             animation-delay: 2s;
             box-shadow: 0 0 5px blue,
@@ -713,6 +740,203 @@
             border-radius: 43px;
         }
 
+        @media screen and (max-width: 320px) {
+            .navbar{
+                display: none;
+                position: absolute;
+                background-color: #333;
+                left:0;
+                top: 60px;
+                width: 100%;
+                padding: 16px;
+                z-index: 1;
+            }
+
+            .navbar a{
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .icon{
+                display: block;
+                float: right;
+            }
+
+            .navbar .responsive #navbar{
+                display: block;
+            }
+
+            .header{
+                padding: 10px;
+            }
+
+            .logo{
+                font-size: 30px;
+            }
+
+            .home{
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                width: 100vh;
+            }
+
+            .home-content h3{
+                font-size: 18px;
+            }
+
+            .home-content h1{
+                font-size: 28px;
+            }
+
+            .home-content p{
+                font-size: 16px;
+            }
+
+            .home-sci a{
+                font-size: 14px;
+            }
+
+            .about{
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 10px ;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                width: 100vh;
+            }
+
+            .about-img{
+                margin-right: 40px;
+            }
+
+            .about-img img{
+                width: 140px;
+                height: auto;
+            }
+
+            .about-text{
+                text-align: center;
+                margin-top: 20px;
+            }
+
+            .about-text h2{
+                font-size: 30px;
+                margin-right: 100px;
+            }
+
+            .about-text h4{
+                font-size: 20px;
+                margin-right: 30px;
+            }
+
+            .about-text p{
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .exp-steyp{
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                width: 100vh;
+            }
+
+            .exp-steyp .title{
+                font-size: 35px;
+            }
+            
+            .exp-steyp .btn-box{
+                margin-left: 190px;
+            }
+
+            .exp-steyp p{
+                font-size: 20px;
+            }
+
+            section#skill{
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                width: 100vh;
+            }
+
+           .skill, .pro-skill{
+                margin-left:10px;
+                margin-right:90px;
+                backdrop-filter: none;
+           }
+
+           .skill span, .pro-skill span{
+                font-size: 16px;
+           }
+
+           .skill .title, .pro-skill .title{
+            font-size: 29px;
+           }
+
+            .projects{
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                width: 100vh;
+                height:100vh;
+            }
+
+            .projects .title{
+                padding-top:10px;
+                font-size:35px;
+                padding-bottom:10px;
+            }
+
+            .projects .cards{
+                padding-bottom: 100px;
+                padding:10px 10px 40px;
+            }
+
+            .projects .card{
+                backdrop-filter:none;
+                padding:8px;
+                margin:0 15px 0 0;
+            }
+
+            .projects .card h2{
+                font-size:20px;
+            }
+
+            .projects .card p{
+                font-size:16px;
+            }
+
+            .projects .card a{
+                font-size:12px;
+                padding:10px 25px;
+            }
+
+            .contact{
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                width: 100vh;
+            }
+
+            .contact-text h2{
+                font-size:35px;
+            }
+
+            .last{
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                width: 100vh;
+            }
+
+            .top{
+                margin-left:540px;
+            }
+        }
 
         @keyframes html{
             0%{
@@ -828,7 +1052,9 @@
     <header class="header">
         <a href="#" class="logo">Port<span>folio</span></a>
 
-        <nav class="navbar">
+         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776</a>
+
+        <nav class="navbar" id="navbar">
             <a href="#home" class="active" style="--i:1">Home</a>
             <a href="#about" style="--i:2">About</a>
             <a href="#skill" style="--i:3">Skill</a>
@@ -843,7 +1069,7 @@
             <h1>Steve Samji</h1>
             <h3>And I'm a <span class="text"></span></h3>
             <p>I'm a Web Designer with extensive experience over 1 year.
-                <br>expertise is to create web designs, Frontend Design, and etc...
+                <br>My expertise is in creating web designs, Frontend Development, and etc...
             </p>
             <div class="home-sci">
                 <a href="#" class="insta" style="--i:6">
@@ -878,7 +1104,7 @@
 
     <div class="exp-steyp">
             <h1 class="title">My experience with <span>Steyp</span></h1>
-            <p>Steyp was introduced to me through my school in my 2024. I joined in the "tech@school" program. I started learning at July 2024 and I completed the course in November 2024. I was most skilled in frontend developing. After joining to Steyp, many changes came. I came to know more about technology. Learning with Steyp, was a nice thing. I am was interested person in computer science. Through steyp, I learned many things.  </p>
+            <p>Steyp was introduced to me through my school in my 2024. I joined in the "tech@school" program. I started learning at July 2024 and I completed the course in November 2024. I was most skilled in frontend developing. After joining to Steyp, many changes came. I came to know more about technology. Learning with Steyp, was a nice thing. Ihave always been interested in Computer Science. Through steyp, I learned many things.  </p>
             <a class="btn-box" href="https://ststephen-pandalam.techatschool.steyp.com/feed/">Go to Steyp <img src="icons/arrow (1).png"></a>
         </div>
 
@@ -921,7 +1147,7 @@
     <section class="projects" id="projects">
         <h1 class="title">My <span>Projects</span></h1>
         <div class="cards">
-            <div class="card">
+            <div class="card" id="card1">
                 <h2>Hibix - Deep Ocean Mysteries</h2>
                 <p>This website is created for learning and knowing more about the deep ocean and some various types of mysteries. There are 7 pages with different catergories of deep ocean mysteries.</p>
                 <!-- <a class="btn-box" href="https://github.com/Fasty-codes/Hibix">Live Project</a> -->
@@ -929,7 +1155,7 @@
                     <a href="https://github.com/Fasty-codes/Hibix">Live project</a>
                 </button>
             </div>
-            <div class="card">
+            <div class="card" id="card2">
                 <h2>Words - Solar System</h2>
                 <p>This website is created by me for learning and knowing more about the solar system and it is not completed. There is only one page now with only discussing planets and asteroids.</p>
                 <!-- <a class="btn-box" href="https://github.com/Fasty-codes/Words-Solar-System">Live Project</a> -->
@@ -937,7 +1163,7 @@
                     <a href="https://github.com/Fasty-codes/Words-Solar-System">Live project</a>
                 </button>
             </div>
-             <div class="card">
+             <div class="card"  id="card3">
                 <h2>Words </h2>
                 <p>This is a website is created by me and my friend for e-learning topics. There are quizzes wit different topics, origami making, how to became a cuber, storywriter, and coding. Now cubing, coding are not added and i am working for it.</p>
                 <!-- <a class="btn-box" href="https://github.com/Fasty-codes/Words">Live Project</a> -->
@@ -980,7 +1206,6 @@
                 <input type="text" name="name" placeholder="Enter your Name" required/>
                 <input type="email" name="email" placeholder="Enter your Email" required/>
 
-                <input type="text" name="subject" placeholder="Enter your Subject" required/>
                 <textarea name="message" id="" cols="40" rows="10" placeholder="Enter your Message"></textarea>
                 <input type="submit" value="Send" class="send">
             </form>
@@ -988,7 +1213,7 @@
     </section>
 
     <div class="last">
-        <p>Developed by Steve Samji &copy 2023</p>
+        <p>Developed by Steve Samji &copy 2025</p>
     </div>
     <a href="#home" class="top"><img src="icons/arrow-up.png"></a>
 
@@ -1001,6 +1226,14 @@
           loop:true
         });
 
+        function toggleMenu() {
+            var x = document.getElementById("navbar");
+            if(x.style.display === "block") {
+                x.style.display = "none";
+            }else{
+                x.style.display = "block";
+            }
+        }
       </script>
 </body>
 </html>
